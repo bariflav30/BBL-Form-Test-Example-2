@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BBL Web Form</title>
+
+	<link rel="stylesheet" href="../dist/tablesaw.css">
+	<link rel="stylesheet" href="demo.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//filamentgroup.github.io/demo-head/demohead.css">
+
+	<script src="../dist/dependencies/jquery.js"></script>
+	<script src="../dist/tablesaw.js"></script>
+	<script src="../dist/tablesaw-init.js"></script>
+	<script src="//filamentgroup.github.io/demo-head/loadfont.js"></script>
+    <style>
+
+</style>
+    
+</head>
+<img src="../images/banner1.png" alt="BBS Banner" class="fixed-ratio-resize" />
+<body>
+	<div class="container">
+	<h4>Midway Atoll National Wildlife Refuge Banding Data sheet (for new: metal or metal and color bands).</h4>
+
+	<p>Date and intials for data entered into Excel for import to bandit:</p>
+
+	<p>Disposition: 300 = Normal bird with metal band only or 301 = metal and color band. Island = SIMA: Sand, EIMA: Eastern, SPMA: Spit. AGE: L = local for chick or fledging. AHY = adult, subadult, unknown. Sex = M, F, or U. Bander = FWS Staff. Color Band example: R/W red band with white letter and numbers. Write only first 7 numbers of the bending string at top of data sheet. Species: LAAL, BFAL, RTTR, etc.</p>
+    
+    
+	<div class="docs-main">
+		
+
+		<table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap data-tablesaw-swipe-media="(min-width: 40em)">
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist" style="width:13%;">Disp</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3" style="width:10%;">Band</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2" style="width:10%;">Old Band</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">MLeg</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Spec</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3" >HO</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">PC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6" >Status</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">MTC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">MCC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="8">MCC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="9">MAMC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MTR</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+          
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MAMR</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Plot ID</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Nest</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">NLoc</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Notes</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Permit</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Date</th>
+          
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4" >Island</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" >Age</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1" >Sex</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" >Sweep</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Observer</th>
+          
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" style="width:8%;">Photo</th>
+          
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" style="width:8%;">Action</th>
+          
+				</tr>
+			</thead>
+      
+			<tbody>
+				<tr>
+                    <td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="6">Added Band</option>
+    <option value="8">Band Lost</option>
+    <option value="4">Destroyed</option>
+    <option value="D">Doubled Banded 1st</option>
+    <option value="S">Doubled Banded 2nd</option>
+    <option value="1">New Brands</option>
+    <option value="9">Record Lost</option>  
+    <option value="5">Replacement</option> 
+    <option value="R">Recapture</option>                  
+</select></td>
+                    <td><input class="form-control" name="band[]" type="text" placeholder="Band No." /></td>
+          
+                    <td><input class="form-control" name="date[]" type="text" placeholder="Replace" /></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="R">Right</option>
+    <option value="L">Left</option>                
+</select></td>
+          
+                    <td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="BFAL">Black-footed Albatross</option>
+    <option value="LAAL">Laysan Albatross</option>               
+</select></td>
+          
+  <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="00">Found dead</option>
+        <option value="01">Shot</option>
+        <option value="02">Starvation</option>
+        <option value="03">Injury</option>
+        <option value="04">Traps or Snare</option>
+        <option value="10">Due to trap, holding device, or handling</option>
+        <option value="12">Cat</option>
+        <option value="13">Wires or Towers</option>
+        <option value="14">Motor Vehicle</option>
+        <option value="15">Weather Conditions</option>
+        <option value="16">Colleted as specimen or scientific study</option>
+        <option value="17">Drowned</option>
+        <option value="21">Building or enclosure</option>
+        <option value="23">Oil or tar</option>
+        <option value="24">Fall from nest</option>
+        <option value="26">Entangled in fishing gear</option>
+        <option value="27">Moving train</option>
+        <option value="28">Caught by hand</option>
+        <option value="29">Sight Record: Color band, marked plumage, numbered metal band</option>
+        <option value="30">Died in nest</option>
+        <option value="33">Observed at or in nest</option>
+        <option value="36">Exhaustion</option>
+        <option value="39">Moving aircraft</option>
+        <option value="42">Moving farm machinery</option>
+        <option value="44">Control operations</option>
+        <option value="45">Found dead or injured on highway</option>
+        <option value="50">Band with skeleton or bone only</option>
+        <option value="52">Sight record: band read by telescope, etc...</option>
+        <option value="54">Striking: Radio, TV, high tension etc.</option>
+        <option value="56">Obtained - Letter simply states in effect "I obtained this bird"</option>
+        <option value="57">Entangled: Wire, shrubs, string etc</option>
+        <option value="58">Bird located by electronic sensor</option>
+        <option value="61">Found dead or caught by disease</option>
+        <option value="62">Found dead or caught by poisoning</option>
+        <option value="63">Struck wind turbine</option>
+        <option value="64">Obtained - Letter simply states in effect "I obtained this bird"</option>
+        <option value="66">Prev. banded bird trapped and released</option>
+        <option value="70">Purchased, e-Bay, traded, etc.</option>
+        <option value="91">Illegally taken</option>
+        <option value="97">Miscellaneous</option>
+        <option value="98">Band or band number only obtained</option>
+</select></td>
+          
+    <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="03">Dead (Unknown)</option>
+        <option value="04">Dead (Left on Bird)</option>
+        <option value="05">Dead (Removed)</option>
+        <option value="07">Alive-Released (Left on Bird)</option>
+        <option value="08">Alive-Released (Removed)</option> 
+   </select></td>
+          
+   <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="300">Normal wild bird. Federal numbered metal band only.</option>
+        <option value="301">Normal wild bird. Colored leg band(s): plastic, metal, paint, tape</option>
+        <option value="307">Normal wild bird. Double-banded (Two Federal bands placed on a bird at the same time)</option>
+        <option value="308">Normal wild bird. Temporary markers: Paint or dye; other temporary markers on feathers (imping, tape on tail).</option>
+        <option value="318">Normal wild bird. Blood sample taken.</option>
+        <option value="319">Normal wild bird. Blood sample taken, plus auxiliary marker(s).</option>
+        <option value="325">Normal wild bird. Two or more types of auxiliary markers.</option>
+        <option value="330">Normal wild bird. Double-banded with Federal bands, plus auxiliary marker(s).</option>
+        <option value="500">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Federal numbered metal band only.</option>
+        <option value="501">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Colored leg band(s): plastic, metal, paint, tape.</option>
+        <option value="507">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Double-banded (Two Federal bands placed on a bird at the same time)</option>
+        <option value="508">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Temporary markers: Paint or dye; other temporary markers on feathers (imping, tape on tail)</option>
+        <option value="518">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Blood sample taken</option>
+        <option value="519">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Blood sample taken, plus auxiliary marker(s).</option>
+        <option value="525">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Two or more types of auxiliary markers.</option>
+        <option value="530">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Double-banded with Federal bands, plus auxiliary marker(s).</option>
+        <option value="540">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Oiled.</option>
+        <option value="551">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Nasal saddle and nasal discs or other bill marker.</option>
+        <option value="380">Normal wild bird. Satellite/ Cell/ GPS transmitter</option>
+        <option value="381">Normal wild bird. Radio transmitter.</option>
+        <option value="390">Normal wild bird. Data logger (including geolocators)</option>
+        <option value="580">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Satellite/ Cell/ GPS transmitter</option>
+        <option value="581">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Radio transmitter.</option>
+        <option value="590">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Data logger (including geolocators)</option>
+        <option value="314">Normal wild bird. Mouth swab.</option>
+        <option value="315">Normal wild bird. Mouth swab, plus one or more auxiliary markers used.</option>
+        <option value="316">Normal wild bird. Tracheal swab.</option>
+        <option value="317">Normal wild bird. Tracheal swab, plus one or more auxiliary markers used.</option>
+        <option value="514">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Mouth swab.</option>
+        <option value="515">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Mouth swab, plus one or more auxiliary markers used.</option>
+        <option value="516">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Tracheal swab.</option>
+        <option value="517">Sick, Exhausted, Injured, Crippled, or Physical Deformity. Tracheal swab, plus one or more auxiliary markers used.</option>
+</select></td>
+          
+<td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="08a">Breast Dye/Paint</option>
+        <option value="08b">Tail Dye/Paint</option>
+        <option value="08c">Wing Dye/Paint</option>
+        <option value="08d">Head/Neck Dye/Paint</option>
+        <option value="08e">Multiple areas Dye/Paint</option>
+        <option value="80a">Satellite/Cell/GPS Transmitter (tail mount)</option>
+        <option value="80b">Satellite/ Cell/ GPS Transmitter (back pack)</option>
+        <option value="80c">Satellite/ Cell/ GPS Transmitter (leg attachment)</option>
+        <option value="80h">Satellite/Cell/GPS Transmitter (leg-loop harness)</option>
+        <option value="80j">Satellite/Cell/GPS Transmitter (glue to skin or feathers)</option>
+        <option value="81a">Radio Transmitter (tail mount)</option>
+        <option value="81b">Radio Transmitter (back pack)</option>
+        <option value="81c">Radio Transmitter (leg attachment)</option>
+        <option value="81h">Radio Transmitter (leg-loop harness)</option>
+        <option value="81j">Radio Transmitter (glue to skin or feathers)</option>
+        <option value="90a">Data Logger/Geolocator (tail mount)</option>
+        <option value="90b">Data Logger/Geolocator (back pack)</option>
+        <option value="90c">Data Logger/Geolocator (leg attachment)</option>
+        <option value="90h">Data Logger/Geolocator (leg-loop harness)</option>
+        <option value="90j">Data Logger/Geolocator (glue to skin or feathers)</option>
+  </select></td>
+          
+                    <td><input class="form-control" name="sex[]" type="text" placeholder="Code" /></td>
+          
+<td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="r/w">Red with white code</option>
+        <option value="g/w">Green with white code</option>
+        <option value="u/w">Blue with white code</option>
+        <option value="b/w">Black with white code</option>
+        <option value="y/b">Yellow with white code</option> 
+        <option value="w/b">White with black code</option>
+        <option value="o/b">Orange with black code</option>
+        <option value="p/w">Purple with white code</option>
+        <option value="n/w">Brown with White Code</option>     
+</select></td>
+          
+<td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="01a">Plastic Color Leg Band</option>
+        <option value="01b">Anodized Color Leg Band</option>
+        <option value="08a">Breast Dye/Paint</option>
+        <option value="08b">Tail Dye/Paint</option>
+        <option value="08c">Wing Dye/Paint</option>
+        <option value="08d">Head/Neck Dye/Paint</option>
+        <option value="08e">Multiple areas Dye/Paint</option>
+        <option value="80a">Satellite/Cell/GPS Transmitter (tail mount)</option>
+        <option value="80b">Satellite/ Cell/ GPS Transmitter (back pack)</option>
+        <option value="80c">Satellite/ Cell/ GPS Transmitter (leg attachment)</option>
+        <option value="80h">Satellite/Cell/GPS Transmitter (leg-loop harness)</option>
+        <option value="80j">Satellite/Cell/GPS Transmitter (glue to skin or feathers)</option>
+        <option value="81a">Radio Transmitter (tail mount)</option>
+        <option value="81b">Radio Transmitter (back pack)</option>
+        <option value="81c">Radio Transmitter (leg attachment)</option>
+        <option value="81h">Radio Transmitter (leg-loop harness)</option>
+        <option value="81j">Radio Transmitter (glue to skin or feathers)</option>
+        <option value="90a">Data Logger/Geolocator (tail mount)</option>
+        <option value="90b">Data Logger/Geolocator (back pack)</option>
+        <option value="90c">Data Logger/Geolocator (leg attachment)</option>
+        <option value="90h">Data Logger/Geolocator (leg-loop harness)</option>
+        <option value="90j">Data Logger/Geolocator (glue to skin or feathers)</option>
+  </select></td>
+          
+  <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="01a">Plastic Color Leg Band</option>
+        <option value="01b">Anodized Color Leg Band</option>
+        <option value="08a">Breast Dye/Paint</option>
+        <option value="08b">Tail Dye/Paint</option>
+        <option value="08c">Wing Dye/Paint</option>
+        <option value="08d">Head/Neck Dye/Paint</option>
+        <option value="08e">Multiple areas Dye/Paint</option>
+        <option value="80a">Satellite/Cell/GPS Transmitter (tail mount)</option>
+        <option value="80b">Satellite/ Cell/ GPS Transmitter (back pack)</option>
+        <option value="80c">Satellite/ Cell/ GPS Transmitter (leg attachment)</option>
+        <option value="80h">Satellite/Cell/GPS Transmitter (leg-loop harness)</option>
+        <option value="80j">Satellite/Cell/GPS Transmitter (glue to skin or feathers)</option>
+        <option value="81a">Radio Transmitter (tail mount)</option>
+        <option value="81b">Radio Transmitter (back pack)</option>
+        <option value="81c">Radio Transmitter (leg attachment)</option>
+        <option value="81h">Radio Transmitter (leg-loop harness)</option>
+        <option value="81j">Radio Transmitter (glue to skin or feathers)</option>
+        <option value="90a">Data Logger/Geolocator (tail mount)</option>
+        <option value="90b">Data Logger/Geolocator (back pack)</option>
+        <option value="90c">Data Logger/Geolocator (leg attachment)</option>
+        <option value="90h">Data Logger/Geolocator (leg-loop harness)</option>
+        <option value="90j">Data Logger/Geolocator (glue to skin or feathers)</option>
+  </select></td>
+                    <td><input class="form-control" name="nest[]" type="text" placeholder="Code" /></td>
+          
+  <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="r/w">Red with White Code</option>
+        <option value="g/w">Green with White Code</option>
+        <option value="u/w">Blue with White Code</option>
+        <option value="b/w">Black with White Code</option>
+        <option value="y/b">Yellow with Black Code</option> 
+        <option value="w/b">White with Black Code</option>
+        <option value="o/b">Orange with Black Code</option>
+        <option value="p/w">Purple with White Code</option>
+        <option value="n/w">Brown with White Code</option>      </select></td>
+          
+ <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="01a">Plastic Color Leg Band</option>
+        <option value="01b">Anodized Color Leg Band</option>
+        <option value="08a">Breast Dye/Paint</option>
+        <option value="08b">Tail Dye/Paint</option>
+        <option value="08c">Wing Dye/Paint</option>
+        <option value="08d">Head/Neck Dye/Paint</option>
+        <option value="08e">Multiple areas Dye/Paint</option>
+        <option value="80a">Satellite/Cell/GPS Transmitter (tail mount)</option>
+        <option value="80b">Satellite/ Cell/ GPS Transmitter (back pack)</option>
+        <option value="80c">Satellite/ Cell/ GPS Transmitter (leg attachment)</option>
+        <option value="80H">Satellite/Cell/GPS Transmitter (leg-loop harness)</option>
+        <option value="80j">Satellite/Cell/GPS Transmitter (glue to skin or feathers)</option>
+        <option value="81a">Radio Transmitter (tail mount)</option>
+        <option value="81b">Radio Transmitter (back pack)</option>
+        <option value="81c">Radio Transmitter (leg attachment)</option>
+        <option value="81h">Radio Transmitter (leg-loop harness)</option>
+        <option value="81j">Radio Transmitter (glue to skin or feathers)</option>
+        <option value="90a">Data Logger/Geolocator (tail mount)</option>
+        <option value="90b">Data Logger/Geolocator (back pack)</option>
+        <option value="90c">Data Logger/Geolocator (leg attachment)</option>
+        <option value="90h">Data Logger/Geolocator (leg-loop harness)</option>
+        <option value="90j">Data Logger/Geolocator (glue to skin or feathers)</option>
+  </select></td>
+          
+                    <td><input class="form-control" name="present[]" type="text" placeholder="Plot ID" /></td>
+          
+                    <td><input class="form-control" name="how[]" type="text" placeholder="Nest" /></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="r">R</option>
+    <option value="s">S</option> 
+    <option value="b">B</option>
+</select></td>
+
+<td><input class="form-control" name="marker[]" type="text" placeholder="Remarks" /></td>
+
+<td><input class="form-control" name="code[]" type="text" placeholder="Permit" /></td>
+          
+<td><input class="form-control" name="additional[]" type="text" placeholder="Date" /></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="sima">Sand</option>
+    <option value="eima">Eastern</option> 
+    <option value="spma">Spit</option>
+</select></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="u">Unknown</option>
+    <option value="ahy">After Hatching Year</option>
+    <option value="hy">Hatching Year</option>
+    <option value="j">Juvenile</option>
+    <option value="l">Local</option>
+    <option value="sy">Second Year</option>
+    <option value="asy">After Second Year</option>
+    <option value="ty">Third Year</option>
+    <option value="aty">After Third Year</option>
+</select></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="U">Unknown</option>
+    <option value="M">Male</option>
+    <option value="F">Female</option>
+</select></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select></td>
+          
+<td><input class="form-control" name="observer[]" type="text" placeholder="Observer" /></td>
+          
+<td><button class="btn btn-primary btn-add" type="button">
+     <i class="glyphicon glyphicon-camera gs"></i> 
+     <b>File</b>
+  </button></td>
+          
+   <td><button class="btn btn-info btn-add" type="button">
+     <i class="glyphicon glyphicon-plus gs"></i> 
+     <b> Add</b>
+  </button></td>
+          
+         </tr>    
+			</tbody>
+		</table>
+        
+   
+    <hr>
+      
+        <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap data-tablesaw-swipe-media="(min-width: 40em)">
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist" style="width:15%;">Disp</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Band</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Old Band</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">MLeg</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Spec</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">HO</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">PC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Status</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">MTC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">MCC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="8">MCC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="9">MAMC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MTR</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MAMR</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Plot ID</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Nest</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">NLoc</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Notes</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Permit</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Date</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Island</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Age</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Sex</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Sweep</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Observer</th>
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Photo</th>
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Action</th>
+				</tr>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            </tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+           </tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            </tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            	</tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+				</tr>
+			</tbody>
+		</table>
+        <button class="btn btn-info btn" type="button">
+           <b>Save</b>
+        </button>	
+        <button class="btn btn-primary showdown" type="submit">
+           <b> Sent </b>
+        </button>
+        
+	</div>
+   </div> 
+</body>
+</html>
